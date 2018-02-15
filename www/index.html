@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!--JS jquery-->
+        <!--framework7-->
+        <link rel = "stylesheet" href = "css/framework7-material.css" >
+        <link rel = "stylesheet" href = "css/framework7-colors.css" >
+        <link rel = "stylesheet" href = "css/framework7-icons.css" >
+        <!--CSS principal-->
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <title>SanJuanSaludAPP</title>
+    </head>
+    <body class="theme-white">
+
+
+    <div class="statusbar-overlay"></div>
+    <div class="views">
+        <div class="view view-main">
+
+            <div class="pages" data-ignore-cache="true">
+
+            <div class="page navbar-fixed" data-page = "index">
+
+                    <!--Navigation Bar-->
+                    <div class = "navbar">
+                        <div class = "navbar-inner">
+                            <div class = "left"></div>
+                            <div class = "center"><img class="mainBanner" src="images/mainBanner.svg"></div>
+                            <div class = "right"></div>
+                        </div>
+                    </div>
+                    <!-- FIN Navigation Bar-->
+
+                    <div class="page-content">
+
+                        <div class="content-block">
+
+                            <div class="row" id="sombraSlide">
+                                <div class="col-100">
+
+                                    <!-- Slider container -->
+                                    <div class="swiper-container">
+                                        <!-- Slides wrapper -->
+                                        <div id="slide" class="swiper-wrapper">
+                                            <!--
+                                            contenido dinámico por js
+                                            -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <p class="buttons-row" >
+                                    <!--Boton centros de salud-->
+                                    <a href="#" id="btnCentros" data-ignore-cache="true"  class="ac-3 button button-fill button-raised boton" >
+                                        
+                                        <span><br>Centros de Salud <br>  <br><img src="images/btnMap.svg" alt=""></span>
+                                    </a>
+
+                                    <!--1000 días-->
+                                    <a href="#" id="btn1000dias"  data-ignore-cache="true" class="button button-fill button-raised boton">
+                                        <span><br>1000 días<br><br><img src="images/1000.svg"  alt=""></span>
+                                    </a>
+                                </p>
+
+                                <p class="buttons-row" >
+                                    <!--Boton PROTUR-->
+                                    <a href="#" id="btnProtur" data-ignore-cache="true" class="button button-fill button-raised boton">
+                                        <span><br>Solicitar <br>turno (PROTUR)<br> <br><img src="images/btnProtur.svg" alt=""></span>
+                                    </a>
+
+                                    <a href="#" id="btnCartaMedica" data-ignore-cache="true"  class="button button-fill button-raised boton" >
+
+                                        <span><br>Carta médica <br>  <br><img src="images/btnCartasMedica.svg" alt=""></span>
+                                    </a>
+
+                                </p>
+
+                                <p class="buttons-row" >
+
+                                    <!--Atencion las 24hs-->
+                                    <a href="#" id="btnEmergencia" onclick="javascript:CallPhone('107');" data-ignore-cache="true" class="button button-fill button-raised boton">
+                                        <span><br>Emergencias 24hs<br><br><img src="images/emergencias.svg"  alt=""></span>
+                                    </a>
+
+                                    <!--Alerta infarto-->
+                                    <a href="#" id="btnAlerta" onclick="javascript:CallPhone('107');" data-ignore-cache="true"  class="button button-fill button-raised boton" >
+                                        <span><br>Código infarto<br><br><img src="images/infarto.svg" alt=""></span>
+                                    </a>
+
+
+                                </p>
+
+                            <div class="row">
+                                <div class="col-100 ">
+                                    <!--Boton ayuda-->
+                                    <a href="#" id="btnAyuda" data-ignore-cache="true" class="button button-fill button-raised boton-chico">
+                                        <span>Ayuda</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <div class="toolbar">
+            <div class="toolbar-inner">
+                <p>Ministerio de Salud Pública - San Juan Argentina</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Links popover -->
+    <div class="popover popover-links">
+        <div class="popover-angle"></div>
+        <div class="popover-inner">
+            <div class="list-block">
+                <ul>
+                    <li><a href="#" id="btnGPS" class="close-popover list-button item-link">Ubicar con mi dispositivo</a></li>
+                    <li><a href="departamentos.html" id="btnDepto" data-view=".view-main" class="close-popover list-button item-link">Elegir por departamento</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--FIN Links popover -->
+
+    </body>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type = "text/javascript" src = "scripts/framework7.js"></script>
+    <script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+    <!--JS usuario-->
+    <script type="text/javascript" src="scripts/markerclusterer.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZK0bGv6wCVNOpLiLRLgV_hy8B-Y07pp4"></script>
+    <script type="text/javascript" src="scripts/func.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <script type="text/javascript" src="scripts/view.js"></script>
+</html>
