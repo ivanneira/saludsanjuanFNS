@@ -96,7 +96,7 @@ myApp.onPageInit('mapa', function (page) {
 
 function load()
 {
-
+//993333
     var temp =
         '<div id="err1" class="swiper-slide" style="background: url(images/ajax.gif) no-repeat center top;background-size:contain;">'+
         '<div class="overlay">'+
@@ -116,7 +116,18 @@ function load()
     });
 
 
+    $$("#openScreenSaver").on('click', function(){
 
+        var popupHTML = '<div class="popup">'+
+            '<div class="content-block">'+
+            '<p>Popup created dynamically.</p>'+
+            '<p><a href="#" class="close-popup">Close me</a></p>'+
+            '</div>'+
+            '</div>'
+        myApp.popup(popupHTML);
+        
+
+    });
 
 
     $("#btnProtur").click(function(){
@@ -137,6 +148,17 @@ function load()
         mainView.router.loadPage("formulario1000dias.html");
     });
 
+    $$("#porGPS").on('click', function(){
+        mainView.router.loadPage("GPS.html");
+    });
+
+    $$("#porNombre").on('click', function(){
+        mainView.router.loadPage("buscar.html");
+    });
+
+    $$("#porDepartamento").on('click', function(){
+        mainView.router.loadPage("departamentos.html");
+    });
 
 
 

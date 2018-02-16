@@ -330,7 +330,7 @@ function fillSlider(selector,json)
         spaceBetween: 10,
         autoplay: 4000
     });
-
+/*
     mySwiper.on('tap', function(data){
         window.plugins.toast.show("Toque dos veces para ver la noticia completa.","3000","bottom");
     });
@@ -339,6 +339,7 @@ function fillSlider(selector,json)
        abrirNoticia(data);
 
     });
+    */
 }
 
 //FUNCION PARA EL REDIRECCIONAMIENTO DE PAGINAS

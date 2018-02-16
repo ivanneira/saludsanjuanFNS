@@ -40,58 +40,40 @@
 
                     <div class="page-content">
 
+                        <!-- salvapantallas Popup -->
+                        <div class="popup popup-salvapantalla">
+                            <div class="content-block">
+                                <p>Services</p>
+                                <p><a href="#" class="close-popup">Close popup</a></p>
+                                <p>Lorem ipsum dolor ...</p>
+                            </div>
+                        </div>
+
                         <div class="content-block">
 
-                            <div class="row" id="sombraSlide">
-                                <div class="col-100">
-
-                                    <!-- Slider container -->
-                                    <div class="swiper-container">
-                                        <!-- Slides wrapper -->
-                                        <div id="slide" class="swiper-wrapper">
-                                            <!--
-                                            contenido dinámico por js
-                                            -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                                 <p class="buttons-row" >
-                                    <!--Boton centros de salud-->
-                                    <a href="#" id="btnCentros" data-ignore-cache="true"  class="ac-3 button button-fill button-raised boton" >
+
+                                    <a href="#" id="porGPS" data-ignore-cache="true"  class="button button-fill button-raised boton" >
                                         
-                                        <span><br>Centros de Salud <br>  <br><img src="images/btnMap.svg" alt=""></span>
+                                        <span><br><b>Buscar con GPS</b>  <br>  <br><img src="images/btnMap.svg" alt=""></span>
                                     </a>
 
-                                    <!--1000 días-->
-                                    <a href="#" id="btn1000dias"  data-ignore-cache="true" class="button button-fill button-raised boton">
-                                        <span><br>1000 días<br><br><img src="images/1000.svg"  alt=""></span>
-                                    </a>
+
                                 </p>
 
                                 <p class="buttons-row" >
-                                    <!--Boton PROTUR-->
-                                    <a href="#" id="btnProtur" data-ignore-cache="true" class="button button-fill button-raised boton">
-                                        <span><br>Solicitar <br>turno (PROTUR)<br> <br><img src="images/btnProtur.svg" alt=""></span>
-                                    </a>
+                                    <a href="#" id="porNombre" data-ignore-cache="true"  class="button button-fill button-raised boton" >
 
-                                    <a href="#" id="btnCartaMedica" data-ignore-cache="true"  class="button button-fill button-raised boton" >
-
-                                        <span><br>Carta médica <br>  <br><img src="images/btnCartasMedica.svg" alt=""></span>
+                                        <span><br><b>Buscar por nombre</b> <br>  <br><img src="images/nombre.svg" alt=""></span>
                                     </a>
 
                                 </p>
 
                                 <p class="buttons-row" >
 
-                                    <!--Atencion las 24hs-->
-                                    <a href="#" id="btnEmergencia" onclick="javascript:CallPhone('107');" data-ignore-cache="true" class="button button-fill button-raised boton">
-                                        <span><br>Emergencias 24hs<br><br><img src="images/emergencias.svg"  alt=""></span>
-                                    </a>
+                                    <a href="#" id="porDepartamento" data-ignore-cache="true"  class="button button-fill button-raised boton" >
 
-                                    <!--Alerta infarto-->
-                                    <a href="#" id="btnAlerta" onclick="javascript:CallPhone('107');" data-ignore-cache="true"  class="button button-fill button-raised boton" >
-                                        <span><br>Código infarto<br><br><img src="images/infarto.svg" alt=""></span>
+                                        <span><br><b>Buscar por departamento</b>  <br>  <br><img src="images/departamento.svg" alt=""></span>
                                     </a>
 
 
@@ -100,8 +82,8 @@
                             <div class="row">
                                 <div class="col-100 ">
                                     <!--Boton ayuda-->
-                                    <a href="#" id="btnAyuda" data-ignore-cache="true" class="button button-fill button-raised boton-chico">
-                                        <span>Ayuda</span>
+                                    <a href="#" id="openScreenSaver" data-ignore-cache="true" class="button button-fill button-raised boton-chico">
+                                        <span>salvapantalla</span>
                                     </a>
                                 </div>
                             </div>

@@ -18,7 +18,6 @@
     <preference name="loadUrlTimeoutValue" value="0" />
     <preference name="ShowSplashScreenSpinner" value="false" />
     <preference name="fullscreen" value="false" />
-    <hook src="scripts/appBeforeBuild.js" type="before_build" />
     <platform name="android">
         <preference name="android-manifest/application/activity/@android:windowSoftInputMode" value="adjustResize" />
         <allow-intent href="market:*" />
@@ -80,7 +79,7 @@
         <splash density="port-mdpi" src="res/screens/android/screen-mdpi-portrait.png" />
         <splash density="port-xhdpi" src="res/screens/android/screen-xhdpi-portrait.png" />
     </platform>
-    <plugin name="cordova-plugin-whitelist" spec="1.2.2" />
+    <plugin name="cordova-plugin-whitelist" spec="^1.2.2" />
     <plugin name="cordova-plugin-geolocation" spec="^2.4.3">
         <variable name="GEOLOCATION_USAGE_DESCRIPTION" value=" " />
     </plugin>
